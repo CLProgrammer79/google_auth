@@ -20,10 +20,40 @@
 
     color: var(--text);
     background: none;
-    border-image: linear-gradient(to right, var(--primary), var(--gray)) 1;
+    border-image: linear-gradient(to right, var(--primary), var(--gray)) 1; //gradient color, nice feature
 
     margin-top: 32px;
     font-size: 18px;
+    //to smoothler when you hover the mouse on the button
+    transition: background-color 0.3s;
+
+
+    //space left and right on the google logo
+    svg {
+        font: size 24px;
+        margin-right: 14px;  
+
+    }
+    //& is refering to the button classs
+    &:hover {
+        background-color: var(--background-light);
+    }
+
+  .user {
+       display:flex; 
+       align-items: center;
+       flex-direction: column;
+
+       margin-bottom: 64px; 
+
+       img {
+        width: 140px;
+        height: 140px;
+        border-radius: 70px;
+        margin-bottom: 20px;
+       }
+
+   }
 
 
 }
